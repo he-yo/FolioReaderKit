@@ -10,8 +10,8 @@ import WebKit
 
 class FolioReaderScript: WKUserScript {
     
-    init(source: String) {
-        super.init(source: source,
+    convenience init(source: String) {
+        self.init(source: source,
                    injectionTime: .atDocumentEnd,
                    forMainFrameOnly: true)
     }
